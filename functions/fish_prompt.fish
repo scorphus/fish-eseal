@@ -30,9 +30,11 @@ function show_status -d "Function to show the current status"
 end
 
 function show_virtualenv -d "Show active python virtual environments"
+  set -g VIRTUAL_ENV_DISABLE_PROMPT 1
   if set -q VIRTUAL_ENV
     set -l venvname (basename "$VIRTUAL_ENV")
-    prompt_segment normal white " ($venvname) "
+    prompt_segment 4B8BBE white " $venvname "
+    prompt_segment normal white " "
   end
 end
 
@@ -86,8 +88,8 @@ end
 ## SHOW PROMPT
 function fish_prompt
   set -g RETVAL $status
-  show_status
   show_virtualenv
+  show_status
   show_user
   show_pwd
   show_prompt
