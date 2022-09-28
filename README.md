@@ -2,7 +2,7 @@
 
 This was adapted from my experience with Chris Morrell's theme + good ol' bobthefish.
 
-<!-- TODO: add pic -->
+![eseal](https://user-images.githubusercontent.com/39812919/179360665-85b95ee2-cb82-46b8-9880-3f33c4dc49da.png)
 
 ## Features
 
